@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <RootNamespace>KUSYS_Demo.Application</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MediatR" Version="12.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Business\Students\Validations" />
+      <Folder Include="Business\Users\Quries" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\KUSYS-Demo.Domain\KUSYS-Demo.Domain.csproj" />
+    </ItemGroup>
+
+</Project>
